@@ -1,0 +1,30 @@
+<style>
+    html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-rows: 100px 1fr 80px;
+}
+nav {
+    background-color: #7E57C2;
+    grid-area: nav;
+}
+main {
+    background-color: #F8BBD0;
+    grid-area: main;
+}
+footer {
+    background-color: #7E57C2;
+    grid-area: footer;
+}
+</style>
+
+<body>
+    <nav>Some navigation buttons</nav>
+    <main>Contendo</main>
+    <footer>Copyrights and stuff</footer>
+</body>
