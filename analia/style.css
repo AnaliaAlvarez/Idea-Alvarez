@@ -275,3 +275,39 @@ body {
 }
 
 /* END Media query tablet and mobile */
+
+.animated-img:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.fade-in {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    justify-items: last baseline;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #e2e2e2
+}
