@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Analia Alvarez</title>
 
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
         <ul class="navbar-list navbar-flex">
-            <li> 
+            <li>
                 <a href="index.html"> Inicio </a>
-            </li> 
-            <li> 
+            </li>
+            <li>
                 <a href="about.html"> Sobre mi </a>
             </li>
-            <li> 
+            <li>
                 <a href="services.html"> Servicios Profesionales </a>
             </li>
-            <li> 
+            <li>
                 <a href="articles.html"> Articulos Cientificos </a>
             </li>
-            <li> 
+            <li>
                 <a href="contact.html"> Contacto </a>
             </li>
         </ul>
@@ -34,46 +37,62 @@
             <h1 class="p-italic fade-in">Contactame</h1>
         </header>
 
-        <main>
-            <section class="justify">
-                <div class="center padding-10">Formulario de contacto</div>
-                <form class="form">
+        <main class="mt-4">
 
-                    <div class="padding-5">
-                    <label>Nombre</label>
+            <div class="row">
+
+                <div class="col-md-6 justify fade-in card">
+
+                    <div class="m-2">
+                        <div class="center padding-10">Formulario de contacto</div>
+                        <form class="form">
+
+                            <div class="form-group">
+                                <div class="padding-5">
+                                <label>Nombre</label>
+                                </div>
+
+                                <div class="padding-5">
+                                <input type="text" name="nombre" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="padding-5">
+                                <label>Email</label>
+                                </div>
+
+                                <div class="padding-5">
+                                <input class="form-control" type="email" name="email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="padding-5">
+                                <label>Mensaje</label>
+                                </div>
+
+                                <div class="padding-5">
+                                <textarea class="form-control" rows="5" cols="30" name="mensaje"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="padding-5">
+                                <input type="submit" class="form-button button" value="Enviar">
+                            </div>
+
+                        </form>
                     </div>
 
-                    <div class="padding-5">
-                    <input type="text" name="nombre">
-                    </div>                    
-                    
-                    <div class="padding-5">
-                    <label>Email</label>
-                    </div>
+                </div>
 
-                    <div class="padding-5">
-                    <input type="text" name="email">
-                    </div>                    
-                    
-                    <div class="padding-5">
-                    <label>Mensaje</label>
-                    </div>
-
-                    <div class="padding-5">
-                    <textarea rows="5" cols="30" name="mensaje"></textarea>
-                    </div>
-                
-                    <div class="padding-5">
-                    <input type="submit" class="form-button button" value="Enviar">
-                    </div>
-
+                <div class="col-md-6 card fade-in">
                     <div>
-                    <img class="cursor-img" src="imgs/click.gif">                     
+                        <img class="cursor-img" src="imgs/click.gif">
                     </div>
-                    
-                </form> 
-                
-            </section>
+                </div>
+
+            </div>
         </main>
     </div>
 
@@ -82,13 +101,13 @@
         <ul class="footer-list footer-flex">
 
             <li>
-                <a href="mailto:alvarezanaliar@gmail.com"> 
-                    <img class="footer-icon" src="imgs/mail.png" alt="E-mail:"> 
+                <a href="mailto:alvarezanaliar@gmail.com">
+                    <img class="footer-icon" src="imgs/mail.png" alt="E-mail:">
                 </a>
             </li>
-            
+
             <li>
-                <a href="https://www.instagram.com/psicopocket/?hl=es-la">  
+                <a href="https://www.instagram.com/psicopocket/?hl=es-la">
                     <img class="footer-icon" src="imgs/instagram.png" alt=Instagram:>
                 </a>
             </li>

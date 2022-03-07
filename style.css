@@ -15,6 +15,7 @@ html, body {
     border-bottom: grey 1px solid;
     font-weight: bold;
     color: white;
+    display: block;
 }
 
 .navbar a {
@@ -51,8 +52,8 @@ html, body {
 }
 
 .image-style {
-    height: 300px; 
-    border: grey 2px dotted; 
+    height: 300px;
+    border: grey 2px dotted;
 }
 
 .footer {
@@ -96,8 +97,8 @@ html, body {
     height: 50px;
 }
 
-.p-italic { 
-    font-style: italic; 
+.p-italic {
+    font-style: italic;
 }
 
 .img-size {
@@ -110,7 +111,7 @@ html, body {
     padding-left: 0px;
     display: inline;
     overflow: auto;
-    position: absolute;    
+    position: absolute;
 }
 
 .img-logo {
@@ -140,7 +141,7 @@ html, body {
     justify-content: justify;
     align-items: justify;
  }
-      
+
  .form-button {
     padding: 0.5em 1em;
     border: none;
@@ -148,29 +149,29 @@ html, body {
     cursor: pointer;
  }
 
- .padding-10 {     
+ .padding-10 {
      padding: 10px;
  }
 
- .padding-5 {     
+ .padding-5 {
     padding: 5px;
 }
 
 .padding-15 {
-    padding: 15px;       
+    padding: 15px;
 }
 
 .div-polaroid {
-    width: 50%;
+    width: 100%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .imgs-container img {
-    margin: 10px;  
+    margin: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 200px;  
+    width: 200px;
 }
 
 .imgs-container {
@@ -268,7 +269,7 @@ body {
     .index-image-text {
         display: block;
         margin: 0;
-    } 
+    }
 
     .services-imgs-container {
         flex-direction: column;
@@ -311,4 +312,15 @@ body {
     text-align: center;
     display: inline-block;
     color: #e2e2e2
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 5px #ffee00;
+	transition: 400ms linear 0s;
+	outline: 0 none;
+}
+
+.form-control:focus {
+    border-color: rgba(0, 136, 169, 0.8);
+    box-shadow: 0 0 0 0.25rem rgb(255, 0, 170 / 25%);
 }
