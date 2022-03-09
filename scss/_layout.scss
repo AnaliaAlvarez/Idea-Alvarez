@@ -1,0 +1,74 @@
+/* Grid layout CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "nav" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+.navbar {
+    grid-area: nav;
+}
+.content {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+
+/* END Grid layout CSS */
+
+.navbar-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Media query Tablet and mobile */
+
+@media screen and (max-width: 767px) {
+
+    .navbar-flex {
+        flex-direction: column;
+    }
+
+    .index-imgs-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .index-container-4 {
+        order: 3;
+        text-align: right !important;
+    }
+
+    .index-container-3 {
+        order: 4;
+        text-align: left !important;
+    }
+
+    .align-right, .align-left {
+        text-align: center;
+    }
+
+    .index-image-text {
+        display: block;
+        margin: 0;
+    }
+
+    .services-imgs-container {
+        flex-direction: column;
+    }
+}
+
+/* END Media query tablet and mobile */

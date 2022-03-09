@@ -1,0 +1,15 @@
+$footerGradient: linear-gradient(90deg, rgba(7,5,36,1) 0%, rgba(79,74,140,1) 100%);
+$footerColor: rgb(7,5,36);
+
+.footer {
+    background: $footerColor;
+    background: $footerGradient;
+    background-size: cover;
+    padding-bottom: 80px;
+    padding: 20px;
+    border-top: grey 1px solid;
+}
+
+.footer-list {
+    list-style: none;
+}

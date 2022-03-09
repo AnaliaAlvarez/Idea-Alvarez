@@ -1,0 +1,33 @@
+$navbarColor: rgb(183, 178, 255);
+$navbarGradient: linear-gradient(90deg, rgba(7,5,36,1) 0%, rgba(79,74,140,1) 100%);
+
+.navbar {
+    padding: 20px;
+    background: $navbarColor;
+    background: $navbarGradient;
+    border-bottom: grey 1px solid;
+    font-weight: bold;
+    color: white;
+    display: block;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:visited {
+            color: white
+        }
+
+        &:hover {
+            text-shadow: 0 0 5px #ffee00;
+            transition: 400ms linear 0s;
+            outline: 0 none;
+        }
+    }
+}
+
+.navbar-list {
+    list-style: none;
+    max-width: 72rem;
+    margin: auto;
+}

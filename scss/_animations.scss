@@ -1,0 +1,14 @@
+.animated-img:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+}
+
+.fade-in {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
