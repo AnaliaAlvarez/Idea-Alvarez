@@ -107,6 +107,14 @@ html, body {
 .line-spacing-20 {
   padding: 20px; }
 
+.page-content, .content {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content {
+  padding: 20px; }
+
 .index-container-spacing {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -133,29 +141,12 @@ html, body {
 .justify {
   text-align: justify; }
 
-.content {
-  padding: 20px;
-  max-width: 72rem;
-  margin-left: auto;
-  margin-right: auto; }
-
 .footer-icon {
   width: 50px;
   height: 50px; }
 
 .p-italic {
   font-style: italic; }
-
-.img-size {
-  float: left;
-  max-width: 50px;
-  max-height: 50px;
-  margin-left: 12%;
-  margin-top: -8%;
-  padding-left: 0px;
-  display: inline;
-  overflow: auto;
-  position: absolute; }
 
 .img-logo {
   height: 300px;

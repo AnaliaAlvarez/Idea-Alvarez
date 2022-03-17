@@ -1,4 +1,5 @@
 $bodyColor: rgb(212, 212, 212);
+$paddingSizes: ("very-small": 5px, "small": 10px, "medium": 15px, "big": 20px);
 
 @import "layout";
 @import "nav";
@@ -11,11 +12,26 @@ html, body {
 }
 
 .line-spacing {
-    padding: 10px;
+    padding: map-get($paddingSizes, "small");
 }
 
 .line-spacing-20 {
-    padding: 20px;
+    padding: map-get($paddingSizes, "big");
+}
+
+@mixin pageSize {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-content {
+    @include pageSize;
+}
+
+.content {
+    @extend .page-content;
+    padding: map-get($paddingSizes, "big");
 }
 
 .index-container-spacing {
@@ -51,13 +67,6 @@ html, body {
     text-align: justify;
 }
 
-.content {
-    padding: 20px;
-    max-width: 72rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer-icon {
     width: 50px;
     height: 50px;
@@ -65,18 +74,6 @@ html, body {
 
 .p-italic {
     font-style: italic;
-}
-
-.img-size {
-    float: left;
-    max-width: 50px;
-    max-height: 50px;
-    margin-left: 12%;
-    margin-top: -8%;
-    padding-left: 0px;
-    display: inline;
-    overflow: auto;
-    position: absolute;
 }
 
 .img-logo {
@@ -113,15 +110,15 @@ html, body {
 }
 
 .padding-10 {
-    padding: 10px;
+    padding: map-get($paddingSizes, "small");
 }
 
 .padding-5 {
-    padding: 5px;
+    padding: map-get($paddingSizes, "very-small");
 }
 
 .padding-15 {
-    padding: 15px;
+    padding: map-get($paddingSizes, "medium");
 }
 
 .div-polaroid {
