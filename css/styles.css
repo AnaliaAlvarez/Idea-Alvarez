@@ -48,6 +48,13 @@ body {
   .services-imgs-container {
     flex-direction: column; } }
 
+@media screen and (max-width: 520px) {
+  .index-imgs-container {
+    display: flex !important;
+    flex-direction: column; }
+  .align-right, .align-left {
+    text-align: center !important; } }
+
 /* END Media query tablet and mobile */
 .navbar {
   padding: 20px;
